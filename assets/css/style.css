@@ -1,0 +1,68 @@
+#sidebar {
+	width: 210px;
+	position: absolute;
+    top: 0;
+   /* bottom: 0;*/
+    left: 0;
+    
+	height: auto;
+	background: black;
+	color: white;
+}
+#sidebar .sidebar-header {
+    padding: 11px 20px 10px 20px;
+    background: white;
+    display: block;
+}
+#sidebar ul.components {
+    border-bottom: 1px solid white;
+}
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: white;
+    background:#0092D1;
+}
+#horizNav {
+	width: calc(100% - 200px);
+	position: absolute;
+    top: 0;
+    right: 0;
+}
+.user_discuss {
+    width: justify;
+    height: justify;
+   /* background-color: green;*/
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+}
+
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px ) {
+    #sidebar {
+        margin-left: -200px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #horizNav {
+        width: 100%;
+    }
+    #horizNav.active {
+        width: calc(100% - 200px);
+    }
+   
+}
